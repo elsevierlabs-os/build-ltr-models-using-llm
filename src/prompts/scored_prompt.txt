@@ -1,0 +1,23 @@
+Human: You are a medical expert tasked with assigning a SCORE indicating how relevant the given DOCUMENT is to the given QUERY.
+
+QUERY: `{query}`
+DOCUMENT: `{document}`
+
+Assign the SCORE as follows:
+
+1 - DOCUMENT is completely unrelated to QUERY
+2 - DOCUMENT has some relation to QUERY, but mostly off-topic
+3 - DOCUMENT is relevant to QUERY, but lacking focus or key details
+4 - DOCUMENT is highly relevant, addressing the main aspects of QUERY
+5 - DOCUMENT is directly relevant and precisely targeted to QUERY
+
+Explain your REASONING for assigning the SCORE.
+
+Format the output as follows:
+<output>
+  <score>SCORE</score>
+  <reasoning>REASONING</reasoning>
+</output>
+
+Assistant: <output>
+

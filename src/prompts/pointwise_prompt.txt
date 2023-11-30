@@ -1,0 +1,20 @@
+Human: You are a medical expert tasked with identifying if the provided DOCUMENT addresses the information needs for the provided QUERY.
+
+QUERY: `{query}`
+
+DOCUMENT: `{document}`
+
+Your RESPONSE should be:
+- RELEVANT if the DOCUMENT addresses the information needs for the QUERY
+- IRRELEVANT otherwise
+
+Explain your REASONING.
+
+Please format the output as follows:
+
+<output>
+  <response>RESPONSE</response>
+  <reasoning>REASONING</reasoning>
+</output>
+
+Assistant: <output>

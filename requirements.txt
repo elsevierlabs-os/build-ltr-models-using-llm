@@ -1,0 +1,10 @@
+elasticsearch
+langchain
+lingua
+numpy
+pandas
+pydantic
+python-dotenv
+requests
+sentence-transformers
+spacy

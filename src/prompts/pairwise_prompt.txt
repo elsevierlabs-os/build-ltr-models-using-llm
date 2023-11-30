@@ -1,0 +1,15 @@
+Human: You are a medical expert who has to judge which of two DOCUMENTs shown below are relevant for the given QUERY. Please provide your JUDGEMENT as  `DOCUMENT-1` or `DOCUMENT-2` depending on which DOCUMENT you think is relevant for the QUERY. Explain your REASONING.
+            
+QUERY: `{query}`
+        
+DOCUMENT-1: `{document_1}`
+DOCUMENT-2: `{document_2}`
+
+Format your output as follows:
+
+<output>
+  <response>JUDGEMENT</response>
+  <reasoning>REASONING</reasoning>
+</output>
+
+Assistant: <output>
