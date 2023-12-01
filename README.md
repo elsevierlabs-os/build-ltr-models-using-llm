@@ -24,8 +24,10 @@ The main components of the pipeline are as follows:
 
 * **Query Sampler** -- filter query logs to find appropriate queries to train LTR relevance models for. Alternate implementations could use question answering on the corpus to generate potential queries.
 * **Label Generator** -- prompts LLMs (in this case Anthropic's Claude) with a (query, document) pair or (query, document-1, document-2) triple to predict if document is relevant or which document is more relvant to the query respectively.
-* **Feature Generator** -- "manual" feature generation using various techniques involving Elasticsearch index, Vector Similarity, Knowledge Graph, etc, to convert incoming (query, document) pair or (query, document-1, document-2) triple into numeric feature vector. Alternate implementations could involve using appropriate third-party embedding models to generate a feature vector.
+* **Feature Generator** -- "manual" feature generation using various techniques involving Elasticsearch index, Vector Similarity, Knowledge Graph, etc, to convert incoming (query, document) pair or (query, document-1, document-2) triple into numeric feature vector. The features generated are summarized in the figure below. Alternate implementations could involve using appropriate third-party embedding models to generate a feature vector.
 * **LTR Model(s)** -- a model that takes a feature vector and predicts a numeric score indicating the relevance of a document to a query or the relevance ranking of a pair of documents against a query. Four types of LTR models were trained, a pointwise regression model, and pairwise models RankNet, LambdaRank and LambdaMART. (_**Note** that these are standalone external models, we do not integrate with Elasticsearch's LTR plugin_).
+
+<img src="figures/features.png"/>
 
 During training, we sample our query logs to find a set of candidate queries. We then generate (top 10 or 20) results from an untuned Elasticsearch index to construct (query, document) pairs or (query, document-1, document-2) triples for RankNet and prompt an LLM to produce judgments. We then use these pairs (or pairs generated from triples) to construct feature vectors for each (query, document) pair. These feature vectors are used to train the LTR model, which is also the output of the training pipeline.
 
