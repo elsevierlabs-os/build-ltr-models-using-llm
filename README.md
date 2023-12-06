@@ -70,11 +70,13 @@ The general expectation is that LambdaMART &gt; LambdaRank &gt; RankNet &gt; Poi
 
 ## References
 
+* [Large Language Models can accurately predict searcher preferences](https://arxiv.org/abs/2309.10621) (Thomas et al, 2023)
 * [Learning to Rank Datasets](https://www.microsoft.com/en-us/research/project/mslr/) (Microsoft Research)
 * [From RankNet to LambdaRank to LambdaMart - an Overview](https://www.microsoft.com/en-us/research/uploads/prod/2016/02/MSR-TR-2010-82.pdf) (Burges, 2010)
 
 ## Presentations
 
 * Elsevier Search Summit 2023 (internal)
-* [PyData Global 2023](https://global2023.pydata.org/cfp/me/submissions/ESEDTM/)
+* PyData Global 2023 ([abstract](https://global2023.pydata.org/cfp/me/submissions/ESEDTM/), [slides](https://www.slideshare.net/sujitpal/building-learning-to-rank-ltr-search-reranking-models-using-large-language-models-llm))
+
 
