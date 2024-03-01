@@ -77,6 +77,6 @@ The general expectation is that LambdaMART &gt; LambdaRank &gt; RankNet &gt; Poi
 ## Presentations
 
 * Elsevier Search Summit 2023 (internal)
-* PyData Global 2023 ([abstract](https://global2023.pydata.org/cfp/me/submissions/ESEDTM/), [slides](https://www.slideshare.net/sujitpal/building-learning-to-rank-ltr-search-reranking-models-using-large-language-models-llm))
+* PyData Global 2023 ([abstract](https://global2023.pydata.org/cfp/me/submissions/ESEDTM/), [slides](https://www.slideshare.net/sujitpal/building-learning-to-rank-ltr-search-reranking-models-using-large-language-models-llm), [video](https://www.youtube.com/watch?v=1E-ZECXn_YA))
 
 
